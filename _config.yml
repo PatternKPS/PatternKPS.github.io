@@ -54,7 +54,7 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: 
+disqus_username: PatternKPS
 
 # Netease settings
 netease_comment: false
@@ -65,7 +65,7 @@ netease_comment: false
 
 # Google Analytics
 ga_track_id: "" # Format: UA-xxxxxx-xx
-ga_domain: https://patternkps.github.io/
+ga_domain: auto
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.

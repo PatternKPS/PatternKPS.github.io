@@ -1,8 +1,7 @@
 [My Personal Webpage](https://patternkps.github.io)
 ================================
 
-
-
+> Copied from [hux's blog](https://github.com/Huxpro/huxpro.github.io/).
 
 License
 -------

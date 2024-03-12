@@ -3,12 +3,10 @@
     @param {boolean} short
 {% endcomment %}
 
-{% if include.type == 'post' or include.type == 'page' %}
+{% if include.type == 'post' %}
 <style type="text/css">
     header.intro-header{
         position: relative;
-        background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');
-        background: {{ page.header-bg-css }};
     }
 
     {% if page.header-mask %}
@@ -20,14 +18,16 @@
     }
     {% endif %}
 </style>
-{% endif %}
-
-{% if include.type == 'post' %}
 {% if page.header-style == 'text' %}
 <header class="intro-header style-text" >
 {% else %}
 <header class="intro-header" >
 {% endif %}
+
+    <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" class="bg-image"> 
+
+    
+    
     <div class="header-mask"></div>
     {% if page.header-img-credit %}
     <div class="header-img-credit">
@@ -47,6 +47,17 @@
                     {% comment %} always create a h2 for keeping the margin {% endcomment %}
                     <h2 class="subheading">{{ page.subtitle }}</h2>
                     <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+
+
+                    {% if site.busuanzi-active %}
+                    
+                    <!--
+                    <span class="meta" id="busuanzi_container_site_pv">Viewed <b style="color: var(--sidebar-main-color); background-color: transparent !important; font-style: bold;"><i><span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Times</span>-->
+
+                    <span class="meta" id="busuanzi_container_page_pv">Viewed <b style="color: var(--sidebar-main-color); background-color: transparent !important; font-style: bold;"><i><span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Times<br></span>
+
+                    
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -61,7 +72,7 @@
         overflow: hidden;
     }
     header.intro-header .container{
-        visibility: hidden;
+        visibility: hidden; 
     }
     header iframe{
         width: 100%;
@@ -94,8 +105,8 @@
 {% endif %}
 
 {% if include.type == 'page' %}
+<!-- fuck css... transform and position:fixed cannot coexist..
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-  <div class="header-mask"></div>
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -111,4 +122,40 @@
     </div>
   </div>
 </header>
+-->
+
+<header class="intro-header">  
+    
+    <div data-scroll-container>
+
+        <p data-scroll >
+            <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img  }}{% endif %}" class="bg-image"> 
+        </p>        
+    </div>
+
+<!-- buggy...
+    <script src="/js/locomotive-scroll.min.js"></script>
+    <script>
+        (function () {
+            var scroll = new LocomotiveScroll({
+                            el: document.querySelector("[data-scroll-container]"),
+                            smooth: true
+                        });
+        })();
+    </script>
+-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="site-heading">
+                
+                <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                <span class="subheading">{{ page.description }}</span>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+
 {% endif %}

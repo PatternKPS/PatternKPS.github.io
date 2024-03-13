@@ -6,14 +6,10 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 
 
 
-<section>
-	<div class="content" style="padding-bottom: px;">
-		<div class="inner">
-			<div class="row">
-				<div class="col-4 col-12-medium">
-					<h2 style="text-align: left;"><style="font-size: 1.25em;"></span> RESEARCH INTERESTS</h2>
-				</div>
-			<div class="col-8 col-12-medium">
+   <section>
+	<center>
+		<h3>RESEARCH INTEREST</h3>
+	</center>
 My research interest includes unsupervised clustering-based and pattern recognition with its leveraging to single, multi-view, and federated learning.
 			</div>
 			</div>
@@ -24,7 +20,7 @@ My research interest includes unsupervised clustering-based and pattern recognit
 
    <section>
 	<center>
-		<h3>EXPERIENCES</h3>
+		<h3>EXPERIENCE</h3>
 	</center>
 				<div class="content">
 					<div class="inner">

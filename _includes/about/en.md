@@ -41,10 +41,6 @@ My research interest includes unsupervised clustering-based and pattern recognit
 	</li>
 	</ul>
 				</div>
-			<div class="col-12 col-11-small">
-			<center>
-				<hr style="height:1px; border-color: #4B4B4C;">
-			</center>
 							</div>
 		</div>
 		<div class="row">

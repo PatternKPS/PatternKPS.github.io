@@ -112,8 +112,7 @@ My research interest includes unsupervised clustering-based and pattern recognit
 		<div class="row">
 		<div class="col-12 col-12-medium" style="margin-left: 15px;margin-right: 15px;">
 			<strong>
-				<h4>2. University of Sumatera Utara, Indonesia <br> 
-				 <i class="fa fa-calendar fa-fw margin-right"></i>February 2014 - December 2015</h4>
+				<h4>2. University of Sumatera Utara, Indonesia</h4>
 			</strong>
 			<strong>
 				<h5>M.Sc in Mathematics, Specialization in Operation Research</h5>

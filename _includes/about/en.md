@@ -11,5 +11,10 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 
 ###### PROFESSIONAL EXPERIENCE
 
-**Chung Yuan Christian University (CYCU), Taiwan**<br/>
+1. **Chung Yuan Christian University (CYCU), Taiwan**<br/>
 **Postdoc Fellow (March 5th, 2023 - March 15th, 2024)**<br/>
+	- Developed soft and hard clustering algorithms to address multiple resources, clients or users data.
+	- Served as a reviewer of information fusion (Elsevier) and IEEE Access.
+ 	- Provided (Matlab) codes that clearly manage the developed algorithms in visualizing and analyzing the problems of multiple resources and multiple clients or users data.
+ 	- Wrote academic papers that implemented a soft or hard clustering algorithm to assure efficiency, repeatability, and standardization in the use of multiple-resources data over multiple clients or users.
+

@@ -5,18 +5,17 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 				please drop me a message.
 
 
-
+<center>
+<hr style="height:1px; border-color: #4B4B4C;">
+</center>
    <section>
 	<center>
 		<h3>RESEARCH INTEREST</h3>
 	</center>
 My research interest includes unsupervised clustering-based and pattern recognition with its leveraging to single, multi-view, and federated learning.
-			</div>
-			</div>
-		</div>
-	</div>
-</section>
-
+<center>
+<hr style="height:1px; border-color: #4B4B4C;">
+</center>
 
    <section>
 	<center>
@@ -27,7 +26,7 @@ My research interest includes unsupervised clustering-based and pattern recognit
 						<div class="row">
 							<div class="col-12 col-12-medium" style="margin-left: 15px;margin-right: 15px;">
 								<strong>
-									<h4>Chung Yuan Christian University, Taiwan</h4>
+									<h4>1. Chung Yuan Christian University, Taiwan</h4>
 								</strong>
 								<strong>
 									<h5>Postdoc Fellow</h5>
@@ -56,7 +55,7 @@ My research interest includes unsupervised clustering-based and pattern recognit
 						<div class="row">
 							<div class="col-12 col-12-medium" style="margin-left: 15px;margin-right: 15px;">
 								<strong>
-									<h4>BINUS University, Indonesia</h4>
+									<h4>2. BINUS University, Indonesia</h4>
 								</strong>
 								<strong>
 									<h5>Lecturer (Specialist) and Staff level Supervisor</h5>
@@ -91,4 +90,4 @@ My research interest includes unsupervised clustering-based and pattern recognit
 					</div>
 				</div>
 			</section>
-		</section>
+

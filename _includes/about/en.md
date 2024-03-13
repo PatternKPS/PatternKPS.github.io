@@ -11,3 +11,5 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 
 ###### PROFESSIONAL EXPERIENCE
 
+**Chung Yuan Christian University (CYCU), Taiwan**<br/>
+**Postdoc Fellow (March 5th, 2023 - March 15th, 2024)**<br/>

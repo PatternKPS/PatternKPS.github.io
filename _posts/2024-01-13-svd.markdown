@@ -10,7 +10,7 @@ tags:
 
 <div class="content">
 <p>
-	We propose a novel unsupervised k-means (U-k-means) clustering algorithm with automatically finding an optimal number of clusters without giving any initialization and parameter selection. The computational complexity of the proposed U-k-means clustering algorithm is analyzed. Comparisons between the proposed U-k-means and other existing methods are also made. Experimental results and comparisons </p>
+We propose a novel unsupervised k-means (U-k-means) clustering algorithm with automatically finding an optimal number of clusters without giving any initialization and parameter selection. The computational complexity of the proposed U-k-means clustering algorithm is analyzed. Comparisons between the proposed U-k-means and other existing methods are also made. Experimental results and comparisons </p>
 <ul class="actions">
 <li><a href="https://github.com/kpnaga08/Unsupervised-k-means" class="button"
 style="color: black;background-color: rgba(75, 75, 76, 0.100);">Codes</a></li>

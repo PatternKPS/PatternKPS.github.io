@@ -96,8 +96,6 @@ My research interest includes unsupervised clustering-based and pattern recognit
 				<div class="col-12 col-12-medium" style="margin-left: 15px;margin-right: 15px;">
 					<strong>
 						<h4>1. Chung Yuan Christian University, Taiwan</h4>
-					</strong>
-					</strong>
 						<h5>Ph.D in Applied Mathematics, Specialization in Discrete Mathematics and Combinatorics</h5>
 					</strong>
 						<h6 class="text-black"><i class="fa fa-calendar fa-fw margin-right"></i>September 2016 - June

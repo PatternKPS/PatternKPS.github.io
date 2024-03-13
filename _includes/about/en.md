@@ -27,7 +27,7 @@ My research interest includes unsupervised clustering-based and pattern recognit
 				<div class="col-12 col-12-medium" style="margin-left: 15px;margin-right: 15px;">
 					<strong>
 						<h4>1. Chung Yuan Christian University, Taiwan</h4>
-						<h5>Postdoc Fellow</h5>
+						<h5>Position: Postdoc Fellow</h5>
 					</strong>
 						<h6 class="text-black"><i class="fa fa-calendar fa-fw margin-right"></i>March 5th, 2023 - March 15th, 2024</h6>
 	<ul>
@@ -49,7 +49,7 @@ My research interest includes unsupervised clustering-based and pattern recognit
 				<h4>2. BINUS University, Indonesia</h4>
 			</strong>
 			<strong>
-				<h5>Lecturer (Specialist) and Staff level Supervisor</h5>
+				<h5>Position: Lecturer (Specialist) and Staff level Supervisor</h5>
 			</strong>
 			<h6 class="text-black"><i class="fa fa-calendar fa-fw margin-right"></i>November 1st, 2020 - March 31st, 2022</h6>
 			<ul>
@@ -90,7 +90,8 @@ My research interest includes unsupervised clustering-based and pattern recognit
 			<div class="row">
 				<div class="col-12 col-12-medium" style="margin-left: 15px;margin-right: 15px;">
 					<strong>
-						<h5>1. Chung Yuan Christian University, Taiwan <br> Ph.D in Applied Mathematics <br> Specialization in Discrete Mathematics and Combinatorics</h5>
+						<h4>Chung Yuan Christian University, Taiwan</h5>
+						<h5>Ph.D in Applied Mathematics, Specialization in Discrete Mathematics and Combinatorics</h5>
 					</strong>
 						<h6 class="text-black"><i class="fa fa-calendar fa-fw margin-right"></i>September 2016 - June
 							2020</h6>

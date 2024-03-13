@@ -85,7 +85,6 @@ My research interest includes unsupervised clustering-based and pattern recognit
 	</div>
 </div>
 </div>
-</section>
 
 
 
@@ -96,33 +95,53 @@ My research interest includes unsupervised clustering-based and pattern recognit
 	<div class="content">
 		<div class="inner">
 			<div class="row">
-<div class="content">
-					<div class="inner">
-						<h2>1. Chung Yuan Christian University, Taiwan</h2>
-						<strong>
-							<h4>Ph.D in Applied Mathematics, Specialization in Discrete Mathematics and Combinatorics</h4>
-						</strong>
-						<strong>
-							<h4>Graduation Grade: 90.03 out of 100.00</h4>
-						</strong>
+				<div class="col-12 col-12-medium" style="margin-left: 15px;margin-right: 15px;">
+					<strong>
+						<h4>1. Chung Yuan Christian University, Taiwan</h4>
+					</strong>
+					</strong>
+						<h5>Ph.D in Applied Mathematics, Specialization in Discrete Mathematics and Combinatorics</h5>
+					</strong>
 						<h6 class="text-black"><i class="fa fa-calendar fa-fw margin-right"></i>September 2016 - June
-							2022</h6>
-						<div class="card" style="padding: 2px; background-color: rgb(242, 242, 242);">
-							<h5>
-								<center><strong>
-										<h4>Relevant Coursework</h4>
+							2020</h6>
+					<center><strong>
+										<h7>Relevant Coursework</h7>
 									</strong></center>
-							</h5>
-							<center>
-								<span class="tag" style="padding: 5px">Regression Analysis</span>
-								<span class="tag" style="padding: 5px">Combinatorics</span>
-								<br>
-								<span class="tag" style="padding: 5px">Statistical Computing and Simulation</span>
-								<span class="tag" style="padding: 5px">Graph Theory</span>
-								<br>
-								<span class="tag" style="padding: 5px">Fuzzy Clustering and Application</span>
-								<ul></ul>
-							</center>
-						</div>
-					</div>
+	<ul>
+	<li>Regression Analysis, Combinatorics, Statistical Computing and Simulation, Graph Theory, and Fuzzy Clustering and Application.
+	</li>
+	</ul>
 				</div>
+			<div class="col-12 col-11-small">
+			<center>
+				<hr style="height:1px; border-color: #4B4B4C;">
+			</center>
+							</div>
+		</div>
+		<div class="row">
+		<div class="col-12 col-12-medium" style="margin-left: 15px;margin-right: 15px;">
+			<strong>
+				<h4>2. University of Sumatera Utara, Indonesia</h4>
+			</strong>
+			<strong>
+				<h5>M.Sc in Mathematics, Specialization in Operation Research</h5>
+			</strong>
+			<h6 class="text-black"><i class="fa fa-calendar fa-fw margin-right"></i>February 2014 - December 2015</h6>
+			<center><strong>
+										<h7>Relevant Coursework</h7>
+									</strong></center>
+	<ul>
+	<li>Real Analysis, Time Series Analysis, Linear Optimization, Stochastic Models, Non Linear Optimization, Dynamic Programming, Discrete Event Simulation, Heuristic in Operation Research, Combinatorial Optimization, Investment Analysis, and Decision Analytic Modeling.
+	</li>
+	</ul>
+	</div>
+	<div class="col-12 col-11-small">
+	<center>
+		<hr style="height:1px; border-color: #4B4B4C;">
+	</center>
+		</div>
+	</div>
+</div>
+</div>
+
+

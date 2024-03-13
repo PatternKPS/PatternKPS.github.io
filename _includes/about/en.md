@@ -78,7 +78,6 @@ My research interest includes unsupervised clustering-based and pattern recognit
 		</div>
 	</div>
 </div>
-</div>
 
 
 

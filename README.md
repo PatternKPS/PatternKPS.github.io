@@ -1,4 +1,4 @@
-[My Personal Webpage](https://patternkps.github.io)
+[My Personal Webpage](https://patternkps.github.io/about/)
 ================================
 
 > Copied from [hux's blog](https://github.com/Huxpro/huxpro.github.io/).

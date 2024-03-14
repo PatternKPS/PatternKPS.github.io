@@ -5,7 +5,7 @@ date:       2024-03-13 15:25:00
 author:     "Kristina"
 header-img: "asset/U-k-means.png"
 tags:
-    - Publication
+    - U-k-means
 ---
 
 <div class="content">

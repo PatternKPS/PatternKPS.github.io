@@ -20,7 +20,7 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 <textarea name="message" id="message" rows="5" style="background-color: rgba(255,255,0,0.3);"></textarea>
 </div>
 <ul class="actions" >
-<li><a href="" class="button submit" style="color: yellow;background-color: rgba(255,255,0,0.3);">Send Message</a></li>
+<li><a href="" class="button submit" style="color: yellow;background-color: rgba(204, 102, 102);">Send Message</a></li>
 </ul>
 </form>
 </section>

@@ -8,6 +8,7 @@ tags:
     - U-MV-FCM
     - Multi-view clustering
     - MV-FCM
+    - Optimal c
     - My publication
 ---
 

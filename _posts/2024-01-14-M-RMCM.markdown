@@ -1,0 +1,18 @@
+---
+layout:     post
+title:      "Modified relational mountain clustering method"
+date:       2024-03-14 11:13:00
+author:     "Kristina"
+header-img: ""
+tags:
+    - M-RMCM
+---
+
+<div class="content">
+<p>
+The relational mountain clustering method (RMCM) is a simple and effective algorithm that can be used to obtain cluster centers and partitions for a relational data set. However, the performance of RMCM heavily depends on the choice of parameters of relational mountain function. In order to solve this problem, we propose a modified RMCM (M-RMCM) by using the correlation self-comparison method to estimate the parameters of the modified relational mountain function, and then applied a validity index to estimate the number of clusters. The proposed M-RMCM can provide good cluster centers, partitions and the number of clusters for most relational data sets in which the results will not be sensitive to parameters. The simulations and comparisons show the superiority and effectiveness of the proposed M-RMCM.</p>
+<ul class="actions">
+<li><a href="https://link.springer.com/chapter/10.1007/978-3-319-91253-0_64" class="button"
+style="color: black;background-color: rgba(75, 75, 76, 0.100);">Paper</a></li>
+</ul>
+</div>

@@ -6,6 +6,10 @@ author:     "Kristina"
 header-img: "asset/Entropy-k-means.png"
 tags:
     - Entropy-k-means
+    - Feature reduction
+    - Optimal c
+    - k-means clustering
+    - My publication
 ---
 
 <div class="content">

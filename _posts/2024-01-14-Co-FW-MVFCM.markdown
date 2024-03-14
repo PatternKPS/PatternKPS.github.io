@@ -6,6 +6,11 @@ author:     "Kristina"
 header-img: "asset/Co-FL-MV-FCM.png"
 tags:
     - Co-FW-MVFCM
+    - Multi-view clustering
+    - Feature reduction
+    - Collaborative learning
+    - MV-FCM
+    - My publication
 ---
 
 <div class="content">

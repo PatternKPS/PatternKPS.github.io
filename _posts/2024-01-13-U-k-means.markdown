@@ -6,6 +6,8 @@ author:     "Kristina"
 header-img: "asset/U-k-means.png"
 tags:
     - U-k-means
+    - k-means clustering
+    - My publication
 ---
 
 <div class="content">

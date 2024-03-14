@@ -6,6 +6,9 @@ author:     "Kristina"
 header-img: "asset/U-MV-FCM.png"
 tags:
     - U-MV-FCM
+    - Multi-view clustering
+    - MV-FCM
+    - My publication
 ---
 
 <div class="content">

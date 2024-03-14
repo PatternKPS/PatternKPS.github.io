@@ -8,6 +8,7 @@ tags:
     - M-RMCM
     - mountain clustering
     - My publication
+    - Conference paper
 ---
 
 <div class="content">

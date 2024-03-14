@@ -26,5 +26,3 @@ style="color: black;background-color: rgba(75, 75, 76, 0.100);">PPT</a>
 </ul>
 </div>
 
-
-https://github.com/kpnaga08/dissertation-defense-presentation-latex/blob/main/Dissertation_Presentation.pdf

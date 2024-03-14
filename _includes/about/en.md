@@ -3,37 +3,33 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 ##### Direct link to my CV <a href="https://github.com/PatternKPS/PatternKPS/blob/main/Curriculum_Vitae.pdf" class="btn-theme btn-theme-md btn-default-bg text-uppercase"> 👉🏽「click here」</a>
 
 <div class="inner">
-							<h1>Get in Touch!</h1>
-                            <div class="split style1">
-                                <section>
-                                    <form method="post" action="https://formspree.io/xeqqdyoz">
-                                        <div class="fields">
-                                            <div class="field half">
-                                                <label for="name" style="color: black;">Name</label>
-                                                <input type="text" name="name" id="name" style="background-color: rgba(75, 75, 76, 0.100);"/>
-                                            </div>
-                                            <div class="field half">
-                                                <label for="email" style="color: black;">Email</label>
-                                                <input type="text" name="email" id="email" style="background-color: rgba(75, 75, 76, 0.100);"/>
-                                            </div>
-                                            <div class="field">
-                                                <label for="message" style="color: black;">Message</label>
-                                                <textarea name="message" id="message" rows="5" style="background-color: rgba(75, 75, 76, 0.100);"></textarea>
-                                            </div>
-                                        </div>
-                                        <ul class="actions" >
-                                            <li><a href="" class="button submit" style="color: black;background-color: rgba(75, 75, 76, 0.100);">Send Message</a></li>
-                                        </ul>
-                                    </form>
-                                </section>
-                                <section>
-                                    <ul class="contact">
-                                        <li>
-                                            <h3>Email</h3>
-                                            <a href="#">krist.p.sinaga@gmail.com</a>
-                                        </li>
-                                    </ul>
-                                </section>
-                        </div>
-                    </section>
-			</div>
+<h1>Get in Touch!</h1>
+<div class="split style1">
+<section>
+<form method="post" action="https://formspree.io/xeqqdyoz">
+<div class="fields">
+<label for="name" style="color: black;">Name</label>
+<input type="text" name="name" id="name" style="background-color: rgba(255, 0, 0, 0.2);"/>
+</div>
+<div class="field half">
+<label for="email" style="color: black;">Email</label>
+<input type="text" name="email" id="email" style="background-color: rgba(255, 0, 0, 0.2);"/>
+</div>
+<div class="field">
+<label for="message" style="color: black;">Message</label>
+<textarea name="message" id="message" rows="5" style="background-color: rgba(255, 0, 0, 0.2);"></textarea>
+</div>
+</div>
+<ul class="actions" >
+<li><a href="" class="button submit" style="color: black;background-color: rgba(255, 0, 0, 0.2);">Send Message</a></li>
+</ul>
+</form>
+</section>
+<section>
+<ul class="contact">
+<li>
+<h3>Email</h3>
+<a href="#">krist.p.sinaga@gmail.com</a>
+</li>
+</ul>
+

@@ -3,12 +3,12 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 ##### Direct link to my CV <a href="https://github.com/PatternKPS/PatternKPS/blob/main/Curriculum_Vitae.pdf" class="btn-theme btn-theme-md btn-default-bg text-uppercase"> 👉🏽「click here」</a>
 
 <div class="inner">
-<h1>Get in Touch!</h1>
+<h3>Get in Touch!</h3>
 <div class="split style1">
 <section>
 <form method="post" action="https://formspree.io/xeqqdyoz">
 <div class="fields">
-<label for="name" style="color: black;">Name</label>
+<label for="name" style="color: yellow;">Name</label>
 <input type="text" name="name" id="name" style="background-color: rgba(255, 0, 0, 0.2);"/>
 </div>
 <div class="field half">
@@ -18,7 +18,6 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 <div class="field">
 <label for="message" style="color: black;">Message</label>
 <textarea name="message" id="message" rows="5" style="background-color: rgba(255, 0, 0, 0.2);"></textarea>
-</div>
 </div>
 <ul class="actions" >
 <li><a href="" class="button submit" style="color: black;background-color: rgba(255, 0, 0, 0.2);">Send Message</a></li>

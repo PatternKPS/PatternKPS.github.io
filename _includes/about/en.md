@@ -8,19 +8,19 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 <section>
 <form method="post" action="https://formspree.io/xeqqdyoz">
 <div class="fields">
-<label for="name" style="color: yellow;">Name</label>
-<input type="text" name="name" id="name" style="background-color: rgba(255, 0, 0, 0.2);"/>
+<label for="name" style="color: yellow;">Name: </label>
+<input type="text" name="name" id="name" style="background-color: rgba(255,255,0,0.3);"/>
 </div>
 <div class="field half">
-<label for="email" style="color: black;">Email</label>
-<input type="text" name="email" id="email" style="background-color: rgba(255, 0, 0, 0.2);"/>
+<label for="email" style="color: yellow;">Email: </label>
+<input type="text" name="email" id="email" style="background-color: rgba(255,255,0,0.3);"/>
 </div>
 <div class="field">
-<label for="message" style="color: black;">Message</label>
-<textarea name="message" id="message" rows="5" style="background-color: rgba(255, 0, 0, 0.2);"></textarea>
+<label for="message" style="color: yellow;">Message</label>
+<textarea name="message" id="message" rows="5" style="background-color: rgba(255,255,0,0.3);"></textarea>
 </div>
 <ul class="actions" >
-<li><a href="" class="button submit" style="color: black;background-color: rgba(255, 0, 0, 0.2);">Send Message</a></li>
+<li><a href="" class="button submit" style="color: yellow;background-color: rgba(255,255,0,0.3);">Send Message</a></li>
 </ul>
 </form>
 </section>

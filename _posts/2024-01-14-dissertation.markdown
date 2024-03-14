@@ -22,6 +22,7 @@ Fuzzy c-means (FCM) algorithm had been widely applied for clustering (single-vie
 style="color: black;background-color: rgba(75, 75, 76, 0.100);">Dissertation Link</a></li>
 <li><a href="https://github.com/kpnaga08/dissertation-defense-presentation-latex/blob/main/Dissertation_Presentation.pdf" class="button"
 style="color: black;background-color: rgba(75, 75, 76, 0.100);">PPT</a>
+</li>
 </ul>
 </div>
 

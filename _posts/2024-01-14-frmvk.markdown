@@ -13,9 +13,9 @@ tags:
 The k-means clustering algorithm is the oldest and most known method in cluster analysis. It has been widely studied with various extensions and applied in a variety of substantive areas. Since internet, social network, and big data grow rapidly, multi-view data become more important. For analyzing multi-view data, various multi-view k-means clustering algorithms have been studied. However, most of multi-view k-means clustering algorithms in the literature cannot give feature reduction during clustering procedures. In general, there often exist irrelevant feature components in multi-view data sets that may cause bad performance for these clustering algorithms. There also exists high feature dimension in multi-view data sets so it is necessary to consider reducing its dimension for clustering algorithms. In this paper, a learning mechanism for the multi-view k-means algorithm to automatically compute individual feature weight is constructed. It can reduce these irrelevant feature components in each view. A new multi-view k-means objective function is firstly proposed for constructing the learning mechanism for feature weights in multi-view clustering. A schema for eliminating irrelevant feature(s) with small weight(s) is then considered for feature reduction. Therefore, a new type of multi-view k-means, called a feature-reduction multi-view k-means (FRMVK), is proposed. The computational complexity of FRMVK is also analyzed. Numerical and real data sets are used to compare FRMVK with other feature-weighted multi-view k-means algorithms. Experimental results and comparisons actually demonstrate the effectiveness and usefulness of the proposed FRMVK clustering algorithm.</p>
 <ul class="actions">
 <li><a href="https://ieeexplore.ieee.org/abstract/document/8793138" class="button"
-style="color: black;background-color: rgba(75, 75, 76, 0.100);">Codes</a></li>
+style="color: black;background-color: rgba(75, 75, 76, 0.100);">Paper</a></li>
 <li><a href="https://github.com/kpnaga08/FRMVK" class="button"
-style="color: black;background-color: rgba(75, 75, 76, 0.100);">Paper</a>
+style="color: black;background-color: rgba(75, 75, 76, 0.100);">Codes</a>
 </li>
 </ul>
 </div>

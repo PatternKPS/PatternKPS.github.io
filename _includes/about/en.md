@@ -16,7 +16,7 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
     <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" style="background-color: rgba(213, 160, 77, 0.02);" required="" >
     </div>  
     <div class="field">
-    <label for="message" style="color: green;">Message</label>
+    <label for="message" style="color: green;">Message: </label>
     <textarea rows="5" name="message" id="message" placeholder="Type your message" style="background-color: rgba(213, 160, 77, 0.02);" required=""></textarea>
     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
     </div>

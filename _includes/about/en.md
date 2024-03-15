@@ -33,15 +33,15 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
         <div id="contact-form">
               <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mbjnkngw" method="post">
   <div class="fields">
-    <label for="full-name" style="color: green;>Name: </label>
+    <label for="full-name" style="color: green;">Name: </label>
     <input type="text" name="name" id="full-name" placeholder="First and Last" style="background-color: rgba(255,255,0,0.3);" required="">
     </div>      
     <div class="field">
-    <label for="email-address" style="color: green;>Email: </label>
-    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+    <label for="email-address" style="color: green;">Email: </label>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" style="background-color: rgba(255,255,0,0.3);">
     </div>  
     <div class="field">
-    <label for="message" style="color: green;>Message</label>
+    <label for="message" style="color: green;">Message</label>
     <textarea rows="5" name="message" id="message" placeholder="Type your message" required=""></textarea>
     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
     </div>

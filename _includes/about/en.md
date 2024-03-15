@@ -2,10 +2,9 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 
 ##### Direct link to my CV <a href="https://github.com/PatternKPS/PatternKPS/blob/main/Curriculum_Vitae.pdf" class="btn-theme btn-theme-md btn-default-bg text-uppercase"> 👉🏽「click here」</a>
 
-<div class="inner">
 <h3>Get in Touch!</h3>
 <div class="split style1">
-<section>
+<body>
 <form method="post" action="https://formspree.io/krist.p.sinaga@gmail.com">
 <div class="fields">
 <label for="name" style="color: yellow;">Name: </label>
@@ -20,10 +19,10 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 <textarea name="message" id="message" rows="5" style="background-color: rgba(255,255,0,0.3);"></textarea>
 </div>
 <ul class="actions" >
-<li><a href="" class="button submit" style="color: yellow;background-color: rgba(204, 102, 102);">Send Message</a></li>
+<li><a href="" class="button submit" style="color: yellow;background-color: rgba(204, 102, 102);">Send</a></li>
 </ul>
 </form>
-</section>
+<body>
 <section>
 <ul class="contact">
 <li>

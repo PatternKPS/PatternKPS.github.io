@@ -3,13 +3,9 @@ layout:     post
 title:      "Unsupervised multiview fuzzy c-means clustering algorithm"
 date:       2024-03-14 11:27:00
 author:     "Kristina"
-header-img: "asset/U-MV-FCM.png"
+header-style: text
 tags:
-    - U-MV-FCM
-    - Multi-view clustering
-    - MV-FCM
-    - Optimal c
-    - My publication
+    - svd
 ---
 
 <div class="content">

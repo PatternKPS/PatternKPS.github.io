@@ -26,7 +26,4 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
     </div>
 
 
-<h4>📫 Email: </h4>
-<a href="#">krist.p.sinaga@gmail.com</a>
-
     

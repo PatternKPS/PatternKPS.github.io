@@ -1,15 +1,11 @@
 ---
 layout:     post
 title:      "Singular Value Decomposition (SVD)"
-date:       2024-03-15 15:45:00
+date:       2024-03-15 15:58:00
 author:     "Kristina"
 header-img: ""
 tags:
-    - U-MV-FCM
-    - Multi-view clustering
-    - MV-FCM
-    - Optimal c
-    - My notebook
+    - svd
 ---
 
 <div class="content">

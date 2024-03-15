@@ -11,7 +11,7 @@ tags:
 ### Prelimenary
 
 
-Let bold-face lower-case letters (like $a$) refer to <font color='yellow'>vectors</font>, bold-face capital letters $\mathbf{A}$ refer to <font color='yellow'>matrices</font>, and italic lower-case letters (like $\mathcal{a}$) refer to <font color='yellow'>scalars</font>. Think $A$ is a $m \times n$ matrix, square or rectangular. Its rank is $p$. We will diagonalize this $A$, but not by $X^{-1} AX$. The *eigenvectors* in $X$ have three big problems:
+Let bold-face lower-case letters (like https://www.sciweavers.org/tex2img.php?eq=a&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=) refer to <font color='yellow'>vectors</font>, bold-face capital letters (https://www.sciweavers.org/tex2img.php?eq=\mathbf{A}&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=) refer to <font color='yellow'>matrices</font>, and italic lower-case letters (like $\mathcal{a}$) refer to <font color='yellow'>scalars</font>. Think (https://www.sciweavers.org/tex2img.php?eq=A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=) is a https://www.sciweavers.org/tex2img.php?eq=m \times n&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=matrix, square or rectangular. Its rank is $p$. We will diagonalize this $A$, but not by $X^{-1} AX$. The *eigenvectors* in $X$ have three big problems:
 1. They are usually not orthogonal
 2. There are not always enough *eigenvectors*, and
 3. $Ax = \lambda x$ requires $A$ to be a square matrix

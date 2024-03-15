@@ -6,7 +6,7 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 <h3>Get in Touch!</h3>
 <div class="split style1">
 <section>
-<form method="post" action="https://formspree.io/xeqqdyoz">
+<form method="post" action="https://formspree.io/krist.p.sinaga@gmail.com">
 <div class="fields">
 <label for="name" style="color: yellow;">Name: </label>
 <input type="text" name="name" id="name" style="background-color: rgba(255,255,0,0.3);"/>

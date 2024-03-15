@@ -3,12 +3,12 @@ layout:     post
 title:      "Singular Value Decomposition (SVD)"
 date:       2024-03-15 15:58:00
 author:     "Kristina"
-header-img: ""
+header-style: text
 tags:
     - svd
 ---
 
-> Prelimenary
+### Prelimenary
 
 
 Let bold-face lower-case letters (like $\mathbf{a}$) refer to <font color='yellow'>vectors</font>, bold-face capital letters $\mathbf{A}$ refer to <font color='yellow'>matrices</font>, and italic lower-case letters (like $\mathcal{a}$) refer to <font color='yellow'>scalars</font>. Think $A$ is a $m \times n$ matrix, square or rectangular. Its rank is $p$. We will diagonalize this $A$, but not by $X^{-1} AX$. The *eigenvectors* in $X$ have three big problems:

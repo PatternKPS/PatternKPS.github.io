@@ -5,7 +5,7 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 <h3>Get in Touch!</h3>
 <div class="split style1">
 <body>
-<form method="post" action="https://formspree.io/krist.p.sinaga@gmail.com">
+<form method="post" action="https://formspree.io/f/mbjnkngw">
 <div class="fields">
 <label for="name" style="color: yellow;">Name: </label>
 <input type="text" name="name" id="name" style="background-color: rgba(255,255,0,0.3);"/>
@@ -30,4 +30,21 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 <a href="#">krist.p.sinaga@gmail.com</a>
 </li>
 </ul>
+
+
+<form
+  action="https://formspree.io/f/mbjnkngw"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 

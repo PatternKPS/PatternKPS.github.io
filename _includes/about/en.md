@@ -2,31 +2,6 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 
 ##### Direct link to my CV <a href="https://github.com/PatternKPS/PatternKPS/blob/main/Curriculum_Vitae.pdf" class="btn-theme btn-theme-md btn-default-bg text-uppercase"> 👉🏽「click here」</a>
 
-<h3>Get in Touch!</h3>
-<div class="split style1">
-<body>
-<form method="post" action="https://formspree.io/f/mbjnkngw">
-<div class="fields">
-<label for="name" style="color: yellow;">Name: </label>
-<input type="text" name="name" placeholder="Type your name" id="name" style="background-color: rgba(255,255,0,0.3);"/>
-</div>
-<div class="field half">
-<label for="email" style="color: yellow;">Email: </label>
-<input type="text" name="email" placeholder="Your email" id="email" style="background-color: rgba(255,255,0,0.3);"/>
-</div>
-<div class="field">
-<label for="message" style="color: yellow;">Message: </label>
-<textarea name="message" placeholder="Type your message" id="message" rows="5" style="background-color: rgba(255,255,0,0.3);"></textarea>
-</div>
-<ul class="actions" >
-<li><a href="" class="button submit" style="color: yellow;background-color: rgba(245, 40, 145, 0.02);">Send</a></li>
-</ul>
-</form>
-<body>
-
-
-
-
 
 <div id="contact">
         <h3>Get in Touch</h3>

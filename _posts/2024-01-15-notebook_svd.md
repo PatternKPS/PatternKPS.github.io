@@ -11,12 +11,12 @@ tags:
 ### Prelimenary
 
 
-Let bold-face lower-case letters (like $\mathbf{a}$) refer to <font color='yellow'>vectors</font>, bold-face capital letters $\mathbf{A}$ refer to <font color='yellow'>matrices</font>, and italic lower-case letters (like $\mathcal{a}$) refer to <font color='yellow'>scalars</font>. Think $A$ is a $m \times n$ matrix, square or rectangular. Its rank is $p$. We will diagonalize this $A$, but not by $X^{-1} AX$. The *eigenvectors* in $X$ have three big problems:
+Let bold-face lower-case letters (like $a$) refer to <font color='yellow'>vectors</font>, bold-face capital letters $\mathbf{A}$ refer to <font color='yellow'>matrices</font>, and italic lower-case letters (like $\mathcal{a}$) refer to <font color='yellow'>scalars</font>. Think $A$ is a $m \times n$ matrix, square or rectangular. Its rank is $p$. We will diagonalize this $A$, but not by $X^{-1} AX$. The *eigenvectors* in $X$ have three big problems:
 1. They are usually not orthogonal
 2. There are not always enough *eigenvectors*, and
 3. $Ax = \lambda x$ requires $A$ to be a square matrix
 
-The <font color='yellow'>**singular vectors**</font> of $A$ solve all those three problems in a perfect way.  
+The **<font color='yellow'>singular vectors</font>** of $A$ solve all those three problems in a perfect way.  
 
 ### Defenition
 

@@ -56,7 +56,9 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
                 <form action="https://formspree.io/f/mbjnkngw" method="POST">
                 <input type="hidden" name="_subject" value="Contact request from personal website" />
                 <input type="email" name="_replyto" placeholder="Your email" required>
+                  <div class="field">
                 <textarea name="message" placeholder="Type your message" required></textarea>
+                    <div class="field">
                 <button type="submit">Send</button>
             </form>
         </div>

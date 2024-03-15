@@ -38,11 +38,11 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
     </div>      
     <div class="field">
     <label for="email-address" style="color: green;">Email: </label>
-    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" style="background-color: rgba(255,255,0,0.3);">
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" style="background-color: rgba(255,255,0,0.3);" required="" >
     </div>  
     <div class="field">
     <label for="message" style="color: green;">Message</label>
-    <textarea rows="5" name="message" id="message" placeholder="Type your message" required=""></textarea>
+    <textarea rows="5" name="message" id="message" placeholder="Type your message" style="background-color: rgba(255,255,0,0.3);" required=""></textarea>
     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
     </div>
   <input type="submit" value="Send">

@@ -7,7 +7,7 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 <body>
 <form method="post" action="https://formspree.io/f/mbjnkngw">
 <div class="fields">
-<label for="name" style="color: yellow;">Name: </label>
+<label for="name" placeholder="Type your name" style="color: yellow;">Name: </label>
 <input type="text" name="name" id="name" style="background-color: rgba(255,255,0,0.3);"/>
 </div>
 <div class="field half">
@@ -19,7 +19,7 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 <textarea name="message" id="message" rows="5" style="background-color: rgba(255,255,0,0.3);"></textarea>
 </div>
 <ul class="actions" >
-<li><a href="" class="button submit" style="color: yellow;background-color: rgba(204, 102, 102);">Send</a></li>
+<li><a href="" class="button submit" style="color: yellow;background-color: rgba(245, 40, 145, 0.02);">Send</a></li>
 </ul>
 </form>
 <body>

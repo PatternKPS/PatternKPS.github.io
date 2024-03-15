@@ -32,9 +32,10 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
         <h3>Get in Touch</h3>
         <div id="contact-form">
               <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mbjnkngw" method="post">
-  <fieldset id="fs-frm-inputs">
+  <div class="fields">
     <label for="full-name">Full Name</label>
     <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+    </div>      
     <div class="field">
     <label for="email-address">Email Address</label>
     <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
@@ -43,8 +44,8 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
     <label for="message">Message</label>
     <textarea rows="5" name="message" id="message" placeholder="Type your message" required=""></textarea>
     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-  </fieldset>
-  <input type="submit" value="Submit">
+    </div>
+  <input type="submit" value="Send">
 </form>
         </div>
     </div>

@@ -12,10 +12,10 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 </div>
 <div class="field half">
 <label for="email" style="color: yellow;">Email: </label>
-<input type="text" name="email" id="email" style="background-color: rgba(255,255,0,0.3);"/>
+<input type="text" name="email" placeholder="Your email" id="email" style="background-color: rgba(255,255,0,0.3);"/>
 </div>
 <div class="field">
-<label for="message" style="color: yellow;">Message</label>
+<label for="message" placeholder="Type your message" style="color: yellow;">Message: </label>
 <textarea name="message" id="message" rows="5" style="background-color: rgba(255,255,0,0.3);"></textarea>
 </div>
 <ul class="actions" >

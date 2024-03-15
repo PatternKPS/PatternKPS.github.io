@@ -9,15 +9,15 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
               <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mbjnkngw" method="post">
   <div class="fields">
     <label for="full-name" style="color: green;">Name: </label>
-    <input type="text" name="name" id="full-name" placeholder="First and Last" style="background-color: rgba(248, 198, 236, 0.02);" required="">
+    <input type="text" name="name" id="full-name" placeholder="First and Last" style="background-color: rgba(79, 113, 112, 0.02);" required="">
     </div>      
     <div class="field">
     <label for="email-address" style="color: green;">Email: </label>
-    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" style="background-color: rgba(248, 198, 236, 0.02);" required="" >
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" style="background-color: rgba(79, 113, 112, 0.02);" required="" >
     </div>  
     <div class="field">
     <label for="message" style="color: green;">Message</label>
-    <textarea rows="5" name="message" id="message" placeholder="Type your message" style="background-color: rgba(248, 198, 236, 0.02);" required=""></textarea>
+    <textarea rows="5" name="message" id="message" placeholder="Type your message" style="background-color: rgba(79, 113, 112, 0.02);" required=""></textarea>
     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
     </div>
   <input type="submit" value="Send" style="color: green;">

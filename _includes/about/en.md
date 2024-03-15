@@ -23,35 +23,13 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 </ul>
 </form>
 <body>
-<section>
-<ul class="contact">
-<li>
-<h3>📫 Email</h3>
-<a href="#">krist.p.sinaga@gmail.com</a>
-</li>
-</ul>
 
 
-<form
-  action="https://formspree.io/f/mbjnkngw"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
 
 
 
 <div id="contact">
-        <h2>Get in Touch</h2>
+        <h3>Get in Touch</h3>
         <div id="contact-form">
               <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mbjnkngw" method="post">
   <fieldset id="fs-frm-inputs">
@@ -72,5 +50,8 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
     </div>
 
 
-
+<li>
+<h4>📫 Email</h4>
+<a href="#">krist.p.sinaga@gmail.com</a>
+</li>
     

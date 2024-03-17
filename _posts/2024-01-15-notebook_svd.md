@@ -3,7 +3,7 @@ layout:     post
 title:      "Singular Value Decomposition (SVD)"
 date:       2024-03-15 15:58:00
 author:     "Kristina"
-header-style: text/x-mathjax-config
+type: "text/x-mathjax-config"
 tags:
     - svd
 ---

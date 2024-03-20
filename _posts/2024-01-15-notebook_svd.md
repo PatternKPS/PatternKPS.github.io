@@ -57,28 +57,7 @@ the **<font color='yellow'>spectral decomposition</font>** of $\mathbf{A}$.
 
 **<font color='green'>Theorem 1.</font>** For any matrix $\mathbf{A} \in \mathbb{R}^{m \times n}$, there exist two orthogonal matrices $\mathbf{U} \in \mathbb{R}^{m \times m}$, $\mathbf{V} \in \mathbb {R}^{n \times n}$, and a non-negative "diagonal" matrix $\mathbf{\Sigma} \in \mathbb{R}^{m \times n}$ (of the same size as $\mathbf{A}$). Such that the SVD of $m \times n$ matrix $\mathbf{A}$ is given by the formula:
 
-> $\mathbf{A}_{m \cdot n} $ 
 
-where:
-- $\mathbf{U}$: $m \times m$ matrix of the orthonormal _eigenvectors_ of $\mathbf{AA}^T$.
-- $\mathbf{\Sigma}$: an $m \times n$ matrix whose $i^{th}$ diagonal entry equals the $i^{th}$ singular value $\sigma_i$ for $i=1, 2, \ldots, p$. All other entries of $\mathbf{\Sigma}$ are zero.
-- $\mathbf{V}^T$: transpose of a $n \times n$ matrix containing the orthonormal eigenvectors of $\mathbf{A}^T \mathbf{A}$.
-
-> $\mathbf{U} \Longleftrightarrow  \mathbf{AA}^T = \mathbf{U} \mathbf{\Sigma} \mathbf{V}^T \cdot \mathbf{V} \mathbf{\Sigma}^T \mathbf{U}^T= \mathbf{U} (\mathbf{\Sigma} \mathbf{\Sigma}^T) \mathbf{U}^T$ and 
-> $\mathbf{V} \Longleftrightarrow  \mathbf{A}^T\mathbf{A} =  \mathbf{V} \mathbf{\Sigma}^T \mathbf{U}^T \cdot \mathbf{U} \mathbf{\Sigma} \mathbf{V}^T = \mathbf{V} (\mathbf{\Sigma}^T \mathbf{\Sigma} ) \mathbf{V}^T $
-
-
-**<font color='green'>Proof:</font>** Given any matrix $\mathbf{A} \in \mathbb{R}^{m \times n}$, the SVD can be though of as solving a matrix equation for three unknown matrices (each with certain constraint):
-
-$$ \mathbf{A}=\underbrace{\mathbf{U}} _{\text{orthogonal}} \cdot \underbrace{\mathbf{\Sigma}} _{\text{diagonal}} \cdot \underbrace{\mathbf{V}^T} _{\text{orthogonal}}$$
-
-Suppose such solutions exist.
-
-- Knowing:
-  
-$$\mathbf{A^T} \mathbf{A}=\mathbf{V} (\mathbf{\Sigma^T} \mathbf{\Sigma} ) \mathbf{V}^T$$
-
-This tells us how to find $\mathbf{V}$ and $\mathbf{\Sigma}$ (which contain the eigenvectors and square roots of eigenvalues of $\mathbf{A}^T\mathbf{A}$, respectively).
 
 
 

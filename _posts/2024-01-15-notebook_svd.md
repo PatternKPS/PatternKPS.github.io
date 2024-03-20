@@ -52,3 +52,88 @@ the **<font color='yellow'>spectral decomposition</font>** of $\mathbf{A}$.
 
 7. It is often used in **<font color='green'>digital signal processing</font>** for **<font color='magenta'>noise reduction</font>**, **<font color='magenta'>image compression</font>**, and other areas.
 
+
+### Mathematics behind SVD
+
+**<font color='green'>Theorem 1.</font>** For any matrix $\mathbf{A} \in \mathbb{R}^{m \times n}$, there exist two orthogonal matrices $\mathbf{U} \in \mathbb{R}^{m \times m}$, $\mathbf{V} \in \mathbb {R}^{n \times n}$, and a non-negative "diagonal" matrix $\mathbf{\Sigma} \in \mathbb{R}^{m \times n}$ (of the same size as $\mathbf{A}$). Such that the SVD of $m \times n$ matrix $\mathbf{A}$ is given by the formula:
+
+$$\mathbf{A}_{m\times n} = \mathbf{U}_{m\times m} \mathbf{\Sigma}_{m \times n} \mathbf{V}_{n\times n}^T$$
+
+where:
+- $\mathbf{U}$: $m \times m$ matrix of the orthonormal _eigenvectors_ of $\mathbf{AA}^T$.
+- $\mathbf{\Sigma}$: an $m \times n$ matrix whose $i^{th}$ diagonal entry equals the $i^{th}$ singular value $\sigma_i$ for $i=1, 2, \ldots, p$. All other entries of $\mathbf{\Sigma}$ are zero.
+- $\mathbf{V}^T$: transpose of a $n \times n$ matrix containing the orthonormal eigenvectors of $\mathbf{A}^T \mathbf{A}$.
+
+> $\mathbf{U} \Longleftrightarrow  \mathbf{AA}^T = \mathbf{U} \mathbf{\Sigma} \mathbf{V}^T \cdot \mathbf{V} \mathbf{\Sigma}^T \mathbf{U}^T= \mathbf{U} (\mathbf{\Sigma} \mathbf{\Sigma}^T) \mathbf{U}^T$ and 
+> $\mathbf{V} \Longleftrightarrow  \mathbf{A}^T\mathbf{A} =  \mathbf{V} \mathbf{\Sigma}^T \mathbf{U}^T \cdot \mathbf{U} \mathbf{\Sigma} \mathbf{V}^T = \mathbf{V} (\mathbf{\Sigma}^T \mathbf{\Sigma} ) \mathbf{V}^T $
+
+
+**<font color='green'>Proof:</font>** Given any matrix $\mathbf{A} \in \mathbb{R}^{m \times n}$, the SVD can be though of as solving a matrix equation for three unknown matrices (each with certain constraint):
+
+\begin{equation*}
+\mathbf{A}=\underbrace{\mathbf{U}}_{\text{orthogonal}} \cdot \underbrace{\mathbf{\Sigma}}_{\text{diagonal}} \cdot \underbrace{\mathbf{V}^T}_{\text{orthogonal}}
+\tag{2}
+\end{equation*}
+
+Suppose such solutions exist.
+
+- Knowing: 
+$$\mathbf{A}^T\mathbf{A}=\mathbf{V} (\mathbf{\Sigma}^T \mathbf{\Sigma} ) \mathbf{V}^T$$
+This tells us how to find $\mathbf{V}$ and $\mathbf{\Sigma}$ (which contain the eigenvectors and square roots of eigenvalues of $\mathbf{A}^T\mathbf{A}$, respectively).
+
+- After we have found both $\mathbf{V}$ and $\mathbf{\Sigma}$, rewrite the matrix equation as 
+$$\mathbf{AV} = \mathbf{U\Sigma}$$
+or in columns,
+$$\mathbf{A} \begin{bmatrix} \mathbf{v}_1 \ldots & \mathbf{v}_p ~ \mathbf{v}_{p+1} \ldots & \mathbf{v}_n\end{bmatrix} = \begin{bmatrix} \mathbf{u}_1 \ldots & \mathbf{u}_p ~ \mathbf{u}_{p+1} \ldots & \mathbf{u}_m\end{bmatrix} ~ \begin{bmatrix} \mathbf{\sigma}_1  &  & & &\\  & \ddots & & &\\ & & \sigma_p & & & \\ & & & & & \\ & & & & & \\  \end{bmatrix}$$
+
+By comparing columns, we obtain
+\begin{equation*}
+\mathbf{Av}_i=
+\begin{cases}
+\sigma_i \mathbf{u}_i,      &1<i \leq p ~~~~~~ \text{(non-zero singular values)}\\ 
+0,      & p<i \leq n
+\end{cases} \tag{3}
+\end{equation*}
+
+This tells us how to find the matrix $\mathbf{U} : \mathbf{u}_i = \frac{1}{\sigma_i} \mathbf{A} \mathbf{v}_i$ for $1\leq i \leq p$.
+
+Let $\mathbf{B} = \mathbf{A}^T \mathbf{A} \in \mathbb{R}^{n \times n}$. Then $\mathbf{B}$ is square, symmetric, and positive semidefinite. 
+
+Therefore, by the <font color='yellow'>_Spectral Theorem_</font>, $\mathbf{B} = \mathbf{V} \mathbf{\Lambda} \mathbf{V}^T$ for an orthogonal $\mathbf{V} \in \mathbb{R}^{n \times n}$ and diagonal $\mathbf{\Lambda} = \text{diag} (\lambda_1, \ldots, \lambda_n)$  with $\lambda_1 \geq \ldots \geq \lambda_p > 0 = \lambda_{p+1}=\ldots = \lambda_n$ (where $p = \text{rank} (\mathbf{A})\leq n)$.
+
+Now let $\sigma_i = \sqrt{\lambda_i}$ and correspondingly from the matrix $\mathbf{\Sigma} \in \mathbb{R}^{m \times n}$:
+
+$$\color{yellow} \mathbf{\Sigma} = \begin{bmatrix} \text{diag} ( \sigma_1, \ldots, \sigma_p) & \mathbf{O}_{p \times (n-p)} \\ \mathbf{O}_{(m-p) \times p} & \mathbf{O}_{(m-p)\times (n - p)} \end{bmatrix}$$
+
+Define also
+
+$$ \mathbf{u}_i = \frac{1}{\sigma_i} \mathbf{Av}_i \in \mathbb{R}^m, ~~~~~~~~~~~ \text{for each} ~~ 1\leq i\leq p$$
+
+
+Then $\mathbf{u}_1, \ldots, \mathbf{u}_p$ are orthonormal vectors. To see this,
+
+\begin{align*}
+\mathbf{u}_i^T \mathbf{u}_j &= \bigg ( \frac{1}{\sigma_i} \mathbf{Av}_i \bigg)^T ~ \bigg ( \frac{1}{\sigma_j} \mathbf{Av}_j \bigg) & = \frac{1}{\sigma_i \sigma_j} \mathbf{v}_i^T ~ \underbrace{\mathbf{A}^T \mathbf{A}}_{\mathbf{B}} ~ \mathbf{v}_j &\\
+ & = \frac{1}{\sigma_i \sigma_j} \mathbf{v}_i^T (\lambda_j \mathbf{v}_j) = \frac{\sigma_j}{\sigma_I} \mathbf{v}_i^T \mathbf{v}_j & &(\lambda_j = \sigma_j^2)\\
+ & = \begin{cases}
+1,      & i = j\\
+0,      & i \neq j
+\end{cases}
+\end{align*}
+
+
+Choose $\mathbf{u}_{p+1}, \ldots, \mathbf{u}_m \in \mathbb{R}^{m}$ (through basis completion) such that
+
+$$\mathbf{U} = \begin{bmatrix} \mathbf{u}_1 \ldots & \mathbf{u}_p\mathbf{u}_{p+1} \ldots & \mathbf{u}_m  \end{bmatrix} \in \mathbb{R}^{m \times m}$$
+
+is an orthogonal matrix.
+
+It remains to verify that $\mathbf{AV} = \mathbf{U \Sigma}$, i.e., 
+
+$$  \mathbf{A} \begin{bmatrix} \mathbf{v}_1 \ldots & \mathbf{v}_p ~ \mathbf{v}_{p+1} \ldots & \mathbf{v}_n\end{bmatrix} = \begin{bmatrix} \mathbf{u}_1 \ldots & \mathbf{u}_p ~ \mathbf{u}_{p+1} \ldots & \mathbf{u}_m\end{bmatrix} ~ \begin{bmatrix} \mathbf{\sigma}_1  &  & & &\\  & \ddots & & &\\ & & \sigma_p & & & \\ & & & & & \\ & & & & & \\  \end{bmatrix} $$
+
+Consider two cases:
+- $1\leq i \leq p$: $\mathbf{Av}_i = \sigma_i \mathbf{u}_i$ by construction.
+- $i > p$: $\mathbf{Av}_i = \mathbf{0}$, which is due to $\mathbf{A}^T \mathbf{Av}_i = \mathbf{Bv}_i = 0 \mathbf{v}_i = \mathbf{0}$.
+
+Consequently, we have obtained that $\color{yellow}\mathbf{A} = \mathbf{U \Sigma V}^T$.

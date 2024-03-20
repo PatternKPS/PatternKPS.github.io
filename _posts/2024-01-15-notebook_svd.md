@@ -14,7 +14,7 @@ tags:
 ### Prelimenary
 
 
-Let bold-face lower-case letters (like $`\mathbf{a}`$) refer to <font color='yellow'>vectors</font>, bold-face capital letters $\mathbf{A}$ refer to <font color='yellow'>matrices</font>, and italic lower-case letters (like $\mathcal{a}$) refer to <font color='yellow'>scalars</font>. Think $\mathbf{A}$ is a  square or rectangular. Its rank is $p$. We will diagonalize this $A$, but not by $X^{-1} AX$. The *eigenvectors* in $X$ have three big problems:
+Let bold-face lower-case letters (like $\color{yellow}\mathbf{a}$) refer to <font color='yellow'>vectors</font>, bold-face capital letters $\color{yellow}\mathbf{A}$ refer to <font color='yellow'>matrices</font>, and italic lower-case letters (like $\color{yellow}\mathcal{a}$) refer to <font color='yellow'>scalars</font>. Think $\mathbf{A}$ is a  square or rectangular. Its rank is $p$. We will diagonalize this $A$, but not by $X^{-1} AX$. The *eigenvectors* in $X$ have three big problems:
 1. They are usually not orthogonal
 2. There are not always enough *eigenvectors*, and
 3. $Ax = \lambda x$ requires $A$ to be a square matrix
@@ -25,7 +25,7 @@ The **<font color='yellow'>singular vectors</font>** of $A$ solve all those thre
 
 1. The SVD of a matrix is a sort of change of coordinates that makes the matrix simple, a *generalization of diagonalization*. It has some interesting algebraic properties and conveys important geometrical and theoritical insights about **linear transformations**.
 
-2. The **singular value decomposition (SVD)** of a matrix is a **factorization** of that matrix **into three matrices**, where the factorization has the form $\color{yellow}\mathbf{U\Sigma V}$. 
+2. The **singular value decomposition (SVD)** of a matrix is a **factorization** of that matrix **into three matrices**, where the factorization has the form $\mathcolor{yellow}\mathbf{U\Sigma V}$. 
 
 3. A **<font color='yellow'>factorization</font>** is called the **<font color='yellow'>eigendecomposition</font>** of A, also called
 the **<font color='yellow'>spectral decomposition</font>** of $\mathbf{A}$.

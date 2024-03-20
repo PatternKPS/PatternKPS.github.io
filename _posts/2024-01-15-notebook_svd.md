@@ -74,8 +74,10 @@ $$ \mathbf{A}=\underbrace{\mathbf{U}} _{\text{orthogonal}} \cdot \underbrace{\ma
 
 Suppose such solutions exist.
 
-- Knowing: 
-$$\mathbf{A}^T\mathbf{A}=\mathbf{V} (\mathbf{\Sigma}^T \mathbf{\Sigma} ) \mathbf{V}^T$$
+- Knowing:
+  
+$$\mathbf{A^T} \mathbf{A}=\mathbf{V} (\mathbf{\Sigma^T} \mathbf{\Sigma} ) \mathbf{V}^T$$
+
 This tells us how to find $\mathbf{V}$ and $\mathbf{\Sigma}$ (which contain the eigenvectors and square roots of eigenvalues of $\mathbf{A}^T\mathbf{A}$, respectively).
 
 

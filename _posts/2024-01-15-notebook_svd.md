@@ -57,7 +57,7 @@ the **<font color='yellow'>spectral decomposition</font>** of $\mathbf{A}$.
 
 **<font color='green'>Theorem 1.</font>** For any matrix $\mathbf{A} \in \mathbb{R}^{m \times n}$, there exist two orthogonal matrices $\mathbf{U} \in \mathbb{R}^{m \times m}$, $\mathbf{V} \in \mathbb {R}^{n \times n}$, and a non-negative "diagonal" matrix $\mathbf{\Sigma} \in \mathbb{R}^{m \times n}$ (of the same size as $\mathbf{A}$). Such that the SVD of $m \times n$ matrix $\mathbf{A}$ is given by the formula:
 
-$$\mathbf{A}_{m\times n} = \mathbf{U} _{m\times m} \mathbf{\Sigma} _{m \times n} \mathbf{V} _{n\times n}^T$$
+$$**A**_{m\times n} = **U**_{m\times m} **\Sigma**_{m \times n} **V**{n\times n}^T$$
 
 where:
 - $\mathbf{U}$: $m \times m$ matrix of the orthonormal _eigenvectors_ of $\mathbf{AA}^T$.

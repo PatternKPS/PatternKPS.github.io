@@ -15,7 +15,7 @@ future: true
 RSS: false
 github_username: PatternKPS
 linkedin_username:  kristina-p-sinaga-083503302
-google_scholar_username: user=bYFMDisAAAAJ&hl=en
+google_scholar_username: citations?user=bYFMDisAAAAJ&hl=en
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.

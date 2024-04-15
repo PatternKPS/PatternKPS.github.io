@@ -3,6 +3,7 @@ layout:     post
 title:      "Tensor"
 date:       2024-04-15 09:05:00
 author:     "Kristina"
+header-img: "asset/tensor.png"
 header-style: text
 hidden:       false
 catalog:      true

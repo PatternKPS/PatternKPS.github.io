@@ -31,27 +31,13 @@ The use of tensor concepts in algorithm development for data analysis facilitate
 
 ### Tensor: Multilinear Algebra
 
-**<font color='red'>Tensor algebra</font>** is a branch of *mathematics* that deals with the properties and **manipulations of tensors**. **<font color='blue'>Tensors</font>** are mathematical objects used to represent <font color='red'>multilinear relationships</font> between *vector spaces*. *They generalize scalars, vectors, and matrices to higher dimensions.* In fact, *vectors* and *matrices* are *<font color='red'>special cases of tensors</font>*, which can be defined as *<font color='red'>low-level tensors</font>*.
+Tensor algebra is a branch of mathematics that deals with the properties and manipulations of tensors. Tensors are mathematical objects used to represent multilinear relationships between *vector spaces. They generalize scalars, vectors, and matrices to higher dimensions. In fact, vectors and matrices are special cases of tensors, which can be defined as low-level tensors.
 
 
-In **<font color='red'>Multilinear algebra</font>**, we work with *vector spaces* and their *dual spaces*. A *vector space* is a collection of objects called *vectors*, which can be added together and scaled by *scalars*. The *dual space* of a vector consists of linear functionals, which are mappings from the vector space to the field of scalars *(usually real numbers or complex numbers)*.
+In Multilinear algebra, we work with *vector spaces* and their dual spaces. A vector space is a collection of objects called vectors, which can be added together and scaled by *scalars*. The dual space* of a vector consists of linear functionals, which are mappings from the vector space to the field of scalars *(usually real numbers or complex numbers).
 
 
-**<font color='red'>A tensor can be described as a multidimensional or N-way array. A tensor can be called a generalized matrix.</font>**
-
-**<font color='green'>A tensor is identified by three parameters, such as *rank*, *shape*, and *size*. </font>**
-
-**<font color='orange'>Rank is referring to the number of tensor's dimensions.</font>**
-
-**<font color='orange'>Shape is referring to the number of tensor's columns and rows.</font>** 
-
-**<font color='green'>CANDECOMP/PARAFAC (CP) decomposes a tensor as *a sum of rank-one tensors*.</font>**
-
-**<font color='green'>The Tucker decomposition is a higher-order form of *principal component analysis (PCA)*.</font>**
-
-**<font color='magenta'>There are many other tensor decompositions, including *INdividual Differences in multidimensional SCALing (INDSCAL)*, *Parallel factor analysis 2 (PARAFAC2)*, *Canonical Decomposition with Linear Constraints (CANDELINC)*, *DEcomposition into DIrectional COMponents (DEDICOM)*, and PARATUCK2.</font>**
-
-**<font color='red'>Tensor factorization is used to extract latent features that can facilitate discoveries of new mechanisims and signatures hidden in the data, where the explainability of the latent features is of principal importance.</font>**
+A tensor can be described as a multidimensional or N-way array. A tensor can be called a generalized matrix. A tensor is identified by three parameters, such as rank, shape, and size. Rank is referring to the number of tensor's dimensions. Shape is referring to the number of tensor's columns and rows. CANDECOMP/PARAFAC (CP) decomposes a tensor as *a sum of rank-one tensors. The Tucker decomposition is a higher-order form of principal component analysis (PCA). There are many other tensor decompositions, including INdividual Differences in multidimensional SCALing (INDSCAL), Parallel factor analysis 2 (PARAFAC2), Canonical Decomposition with Linear Constraints (CANDELINC), DEcomposition into DIrectional COMponents (DEDICOM), and PARATUCK2. Tensor factorization is used to extract latent features that can facilitate discoveries of new mechanisims and signatures hidden in the data, where the explainability of the latent features is of principal importance.
 
 
 **Notation**

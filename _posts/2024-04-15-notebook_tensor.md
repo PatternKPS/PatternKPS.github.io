@@ -11,7 +11,7 @@ tags:
     - Tensor
 ---
 
-### Tensor as a tool
+### 
 
 
 The era of AI (soon will become AGI), big data, and IoT is just getting started. These three concepts are related to each other and becomes important to drive major innovations in digital transformation. The big data is a core subset of the IoT, and AI algorithms powered its ability to provide and extract information. 

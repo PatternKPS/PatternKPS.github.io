@@ -29,7 +29,7 @@ Tensor-based algorithms, such as tensor factorization and decomposition techniqu
 The use of tensor concepts in algorithm development for data analysis facilitates the representation, analysis, and interpretation of complex, high-dimensional data. Tensors enable algorithms to capture and leverage the intrinsic structures and relationships within the data, leading to more efficient, accurate, and scalable solutions in <font color='red'>the era of data-driven technologies</font>.
 
 
-## 1. Multilinear Algebra
+### Tensor: Multilinear Algebra
 
 **<font color='red'>Tensor algebra</font>** is a branch of *mathematics* that deals with the properties and **manipulations of tensors**. **<font color='blue'>Tensors</font>** are mathematical objects used to represent <font color='red'>multilinear relationships</font> between *vector spaces*. *They generalize scalars, vectors, and matrices to higher dimensions.* In fact, *vectors* and *matrices* are *<font color='red'>special cases of tensors</font>*, which can be defined as *<font color='red'>low-level tensors</font>*.
 

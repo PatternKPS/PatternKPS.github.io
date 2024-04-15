@@ -29,3 +29,62 @@ Tensor-based algorithms, such as tensor factorization and decomposition techniqu
 The use of tensor concepts in algorithm development for data analysis facilitates the representation, analysis, and interpretation of complex, high-dimensional data. Tensors enable algorithms to capture and leverage the intrinsic structures and relationships within the data, leading to more efficient, accurate, and scalable solutions in <font color='red'>the era of data-driven technologies</font>.
 
 
+## 1. Multilinear Algebra
+
+**<font color='red'>Tensor algebra</font>** is a branch of *mathematics* that deals with the properties and **manipulations of tensors**. **<font color='blue'>Tensors</font>** are mathematical objects used to represent <font color='red'>multilinear relationships</font> between *vector spaces*. *They generalize scalars, vectors, and matrices to higher dimensions.* In fact, *vectors* and *matrices* are *<font color='red'>special cases of tensors</font>*, which can be defined as *<font color='red'>low-level tensors</font>*.
+
+
+In **<font color='red'>Multilinear algebra</font>**, we work with *vector spaces* and their *dual spaces*. A *vector space* is a collection of objects called *vectors*, which can be added together and scaled by *scalars*. The *dual space* of a vector consists of linear functionals, which are mappings from the vector space to the field of scalars *(usually real numbers or complex numbers)*.
+
+
+**<font color='red'>A tensor can be described as a multidimensional or N-way array. A tensor can be called a generalized matrix.</font>**
+
+**<font color='green'>A tensor is identified by three parameters, such as *rank*, *shape*, and *size*. </font>**
+
+**<font color='orange'>Rank is referring to the number of tensor's dimensions.</font>**
+
+**<font color='orange'>Shape is referring to the number of tensor's columns and rows.</font>** 
+
+**<font color='green'>CANDECOMP/PARAFAC (CP) decomposes a tensor as *a sum of rank-one tensors*.</font>**
+
+**<font color='green'>The Tucker decomposition is a higher-order form of *principal component analysis (PCA)*.</font>**
+
+**<font color='magenta'>There are many other tensor decompositions, including *INdividual Differences in multidimensional SCALing (INDSCAL)*, *Parallel factor analysis 2 (PARAFAC2)*, *Canonical Decomposition with Linear Constraints (CANDELINC)*, *DEcomposition into DIrectional COMponents (DEDICOM)*, and PARATUCK2.</font>**
+
+**<font color='red'>Tensor factorization is used to extract latent features that can facilitate discoveries of new mechanisims and signatures hidden in the data, where the explainability of the latent features is of principal importance.</font>**
+
+
+**Notation**
+
+1. *Order* is the number of ways or modes of a tensor. 
+
+2. *Vectors* **(1D Matrix)** are tensors of order one and denoted by boldface lowercase letters, e.g. $\mathbf{t}$.
+
+3. *Matrices* are tensors of order two and denoted by boldface capital letters, e.g. $\mathbf{T}$. 
+
+4. Tensors of higher-order, namely order three and greater, we denote by boldface Euler script letters, e.g. $\mathbf{\mathcal{T}}$.
+
+5. Thus, if $\mathbf{\mathcal{T}}$ represent a $D$ way data array of size $n_1 \times n_2 \times \ldots \times n_D$, we say $\mathbf{\mathcal{T}}$ is a tensor of order $D$. 
+
+6. Denote scalars by lowercase letters, e.g. $t$. 
+
+7. Denote the $i$- th element of a vector $\mathbf{t}$ by $t_i$, the $ij$- th element of a matrix $\mathbf{T}$ by $t_{ij}$, the $ijk$- th element of a third-order tensor $\mathbf{\mathcal{T}}$ by $t_{ijk}$, and so on.
+
+8. We denote the $i$-th row of a matrix $\mathbf{T}$ by $\mathbf{T_{i:}}$ and the $j$-th column of a matrix $\mathbf{T}$ by $\mathbf{T_{:j}}$.
+
+9. *Fibers* are subarrays of a tensor obtained by fixing all but one of its indices. In the case of a matrix, a *mode-1 fiber* is a *matrix column* and a *mode-2 fiber* is a *matrix row*.
+
+10. *Slices* are the two-dimensional subarrays of a tensor obtained by fixing all but two indices. For example, a third-order tensor $\mathbf{\mathcal{T}}$ has three sets of slices denoted by $\mathbf{\mathcal{T_{i,::}}}$, $\mathbf{\mathcal{T_{:j:}}}$, and $\mathbf{\mathcal{T_{::k}}}$.
+
+
+It is often convenient to reorder the elements of a $D$- way array into a matrix or vector. 
+
+- Reordering a tensor's elements into a matrix is reffered to as *matricization*, while
+- Reordering its elements into a vector is referred to as *vectorization*. 
+
+
+There are many ways to reorder a tensor into a matrix or vector. We can use :
+
+1. Canonical mode-$d$ matricization or well-known as PARAFAC/ Canonical Polyadic (CP),
+2. Tucker decompositions, and 
+3. Non-Negative Tensor Factorization (NTF)

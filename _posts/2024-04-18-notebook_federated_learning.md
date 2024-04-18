@@ -81,7 +81,7 @@ The server receives model updates from the selected client nodes. If it selected
 In order to get one single model, we have to combine all the model updates we received from the client nodes. This process is called aggregation, and there are many different ways to do it. The most basic way to do it is called Federated Averaging (<a href="https://arxiv.org/abs/1602.05629" target="_blank" rel="noopener">McMahan et al., 2016</a>), often abbreviated as FedAvg. FedAvg takes the 100 model updates and, as the name suggests, averages them. To be more precise, it takes the weighted average of the model updates, weighted by the number of examples each client used for training. The weighting is important to make sure that each data example has the same “influence” on the resulting global model. If one client has 10 examples, and another client has 100 examples, then - without weighting - each of the 10 examples would influence the global model ten times as much as each of the 100 examples.
 
 
-#### **<font color='green'>Step 5: Repeat steps 1 to 4 until the model converges</font>**
+##### **<font color='green'>Step 5: Repeat steps 1 to 4 until the model converges</font>**
 
 **<font color='orange'>Steps 1 to 4</font>** are what we call a single round of federated learning. The global model parameters get sent to the participating client nodes (step 1), the client nodes train on their local data (step 2), they send their updated models to the server (step 3), and the server then aggregates the model updates to get a new version of the global model (step 4).
 

@@ -422,3 +422,6 @@ plt.title("MNIST - IID - 100 clients with 10 clients per round")
 
 
 So.... we can modify the provided codes above to train 200, 400, 600, or even thousand billions of clients in federated environment using <font color='blue'>&#x1F33C;&#127800;F</font><font color='orange'>L</font><font color='magenta'>O</font><font color='yellow'>W</font><font color='green'>E</font><font color='black'>R &#x1F33C;&#127800;</font>. Anyway, I just tried until 200 clients using this data of MNIST.
+
+![image](https://github.com/PatternKPS/patternkps.github.io/assets/150363044/7d661247-b3be-49ba-a131-346778a1d055)
+

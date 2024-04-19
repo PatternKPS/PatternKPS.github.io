@@ -10,7 +10,7 @@ tags:
 ---
 
 
-## <font color='red'>F</font><font color='orange'>L</font><font color='magenta'>O</font><font color='yellow'>W</font><font color='green'>E</font><font color='black'>R</font>
+## <font color='blue'>F</font><font color='orange'>L</font><font color='magenta'>O</font><font color='yellow'>W</font><font color='green'>E</font><font color='black'>R</font>
 
 <font color='black'> The idea behind Federated Learning is to train a model between multiple clients and a server without having to share any data. This is done by letting each client train the model locally on its data and send its parameters back to the server, which then aggregates all the clients’ parameters together using a predefined strategy. This process is made very simple by</font> <font color='green'>using the Flower framework &#128512;.</font>
 
@@ -385,4 +385,4 @@ plt.title("MNIST - IID - 100 clients with 10 clients per round")
 ```
 
 
-So.... we can modify the provided codes above to train 200, 400, 600, or even thousand billions of clients in federated environment using <font color='red'>F</font><font color='orange'>L</font><font color='magenta'>O</font><font color='yellow'>W</font><font color='green'>E</font><font color='black'>R</font>. Anyway, I just tried until 200 clients using this data of MNIST.
+So.... we can modify the provided codes above to train 200, 400, 600, or even thousand billions of clients in federated environment using <font color='blue'>F</font><font color='orange'>L</font><font color='magenta'>O</font><font color='yellow'>W</font><font color='green'>E</font><font color='black'>R</font>. Anyway, I just tried until 200 clients using this data of MNIST.

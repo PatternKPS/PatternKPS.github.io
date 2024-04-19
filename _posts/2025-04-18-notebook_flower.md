@@ -210,3 +210,72 @@ DEVICE = torch.device("cpu")
 # DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print(f"Training on {DEVICE}")
 ```
+
+Then we need to define our Flower Client class &#128512;&#128512;&#128512;
+
+```ts
+from collections import OrderedDict
+from typing import Dict, Tuple
+
+import torch
+from flwr.common import NDArrays, Scalar
+
+
+class FlowerClient(fl.client.NumPyClient):
+    def __init__(self, trainloader, vallodaer) -> None:
+        super().__init__()
+
+        self.trainloader = trainloader
+        self.valloader = vallodaer
+        self.model = Net(num_classes=10)
+
+    def set_parameters(self, parameters):
+        """With the model parameters received from the server,
+        overwrite the uninitialise model in this class with them."""
+
+        params_dict = zip(self.model.state_dict().keys(), parameters)
+        state_dict = OrderedDict({k: torch.Tensor(v) for k, v in params_dict})
+        # now replace the parameters
+        self.model.load_state_dict(state_dict, strict=True)
+
+    def get_parameters(self, config: Dict[str, Scalar]):
+        """Extract all model parameters and convert them to a list of
+        NumPy arrays. The server doesn't work with PyTorch/TF/etc."""
+        return [val.cpu().numpy() for _, val in self.model.state_dict().items()]
+
+    def fit(self, parameters, config):
+        """This method train the model using the parameters sent by the
+        server on the dataset of this client. At then end, the parameters
+        of the locally trained model are communicated back to the server"""
+
+        # copy parameters sent by the server into client's local model
+        self.set_parameters(parameters)
+
+        # Define the optimizer -------------------------------------------------------------- Essentially the same as in the centralised example above
+        optim = torch.optim.SGD(self.model.parameters(), lr=0.01, momentum=0.9)
+
+        # do local training  -------------------------------------------------------------- Essentially the same as in the centralised example above (but now using the client's data instead of the whole dataset)
+        train(self.model, self.trainloader, optim, epochs=1)
+
+        # return the model parameters to the server as well as extra info (number of training examples in this case)
+        return self.get_parameters({}), len(self.trainloader), {}
+
+    def evaluate(self, parameters: NDArrays, config: Dict[str, Scalar]):
+        """Evaluate the model sent by the server on this client's
+        local validation set. Then return performance metrics."""
+
+        self.set_parameters(parameters)
+        loss, accuracy = test(
+            self.model, self.valloader
+        )  # <-------------------------- calls the `test` function, just what we did in the centralised setting (but this time using the client's local validation set)
+        # send statistics back to the server
+        return float(loss), len(self.valloader), {"accuracy": accuracy}
+```
+
+Spend a few minutes to inspect the <span style='color:  #000000; font-family: monospace; background-color: #40E0D0;'>FlowerClient</span> class above. Please ask questions if there is something unclear !
+
+
+Then keen-eyed among you might have realised that if we were to fuse the client's <span style='color:  #000000; font-family: monospace; background-color: #40E0D0;'>fit()</span> and <span style='color:  #000000; font-family: monospace; background-color: #40E0D0;'>evaluate()</span> methods, we'll end up with essentially the same as in the <span style='color:  #000000; font-family: monospace; background-color: #40E0D0;'>run_centralised()</span> function we used in the Centralised Training part of this tutorial. And it is true!! In Federated Learning, the way clients perform local training makes use of the same principles as more traditional centralised setup. The key difference is that the dataset now is much smaller and it's never *"seen"* by the entity running the FL workload (i.e. the central server).
+
+
+Talking about the central server... we should define what strategy we want to make use of so the updated models sent from the clients back to the server at the end of the <span style='color:  #000000; font-family: monospace; background-color: #40E0D0;'>fit()</span> method are aggregate.

@@ -2,7 +2,7 @@ In June 2020, I graduated from Chung Yuan Christian University (CYCU) with a Ph.
 
 ##### For a more in-depth list of publications, experiences, skills, etc., please check my CV <a href="https://github.com/PatternKPS/PatternKPS/blob/main/Curriculum_Vitae.pdf" class="btn-theme btn-theme-md btn-default-bg text-uppercase"> 👉🏽「click here」</a>
 
-`Note: my old email address from yahoo (kristinasinaga57@yahoo.co.id) is no longer active (I forgot my password and disabled to recover). I don't use social media such as facebook or instagram for more than a year (I ever had accounts but having no access to it anymore).`
+`Note: my old email address from yahoo (kristinasinaga57@yahoo.co.id) is no longer active (I forgot my password and disabled to recover). I dropped social media such as facebook or instagram over a year ago (It happened by accident. The accounts still exist but am having no access to it over a year now. Good thing I dont miss it).`
 
 
 <div id="contact">

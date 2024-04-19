@@ -279,3 +279,107 @@ Then keen-eyed among you might have realised that if we were to fuse the client'
 
 
 Talking about the central server... we should define what strategy we want to make use of so the updated models sent from the clients back to the server at the end of the <span style='color:  #000000; font-family: monospace; background-color: #40E0D0;'>fit()</span> method are aggregate.
+
+
+### <font color='orange'>Choosing a Flower Strategy &#128512;&#128512;&#128512;</font>
+
+A strategy sits at the core of the Federated Learning experiment. It is involved in all stages of a FL pipeline: sampling clients; sending the *global model* to the clients so they can do <span style='color:  #000000; font-family: monospace; background-color: #40E0D0;'>fit()</span>; receive the updated models from the clients and **aggregate** these to construct a new *global model*; define and execute global or federated evaluation; and more.
+
+
+The way <span style='color:  #000000; font-family: monospace; background-color: #40E0D0;'>FedAvg</span> works is simple but performs surprisingly well in practice. It is therefore one good strategy to start your experimentation. <span style='color:  #000000; font-family: monospace; background-color: #40E0D0;'>FedAvg</span>, as its name implies, derives a new version of the *global model* by taking the average of all the models sent by clients participating in the round. 
+
+
+Let's see how we can define <span style='color:  #000000; font-family: monospace; background-color: #40E0D0;'>FedAvg</span> using Flower. We use one of the callbacks called <span style='color:  #000000; font-family: monospace; background-color: #40E0D0;'>evaluate_fn</span> so we can easily evaluate the state of the global model using a small centralised testset. Note this functionality is user-defined since it requires a choice in terms of ML-framework. (if you recall, Flower is framework agnostic).
+
+> This being said, centralised evaluation of the global model is only possible if there exists a centralised dataset that somewhat follows a similar distribution as the data that's spread across clients. In some cases having such centralised dataset for validation is not possible, so the only solution is to federate the evaluation of the _global model_. This is the default behaviour in Flower. If you don't specify the <span style='color:  #000000; font-family: monospace; background-color: #40E0D0;'>evaluate_fn</span> argument in your strategy, then, centralised global evaluation won't be performed.
+
+```ts
+def get_evalulate_fn(testloader):
+    """This is a function that returns a function. The returned
+    function (i.e. `evaluate_fn`) will be executed by the strategy
+    at the end of each round to evaluate the stat of the global
+    model."""
+
+    def evaluate_fn(server_round: int, parameters, config):
+        """This function is executed by the strategy it will instantiate
+        a model and replace its parameters with those from the global model.
+        The, the model will be evaluate on the test set (recall this is the
+        whole MNIST test set)."""
+
+        model = Net(num_classes=10)
+
+        # set parameters to the model
+        params_dict = zip(model.state_dict().keys(), parameters)
+        state_dict = OrderedDict({k: torch.Tensor(v) for k, v in params_dict})
+        model.load_state_dict(state_dict, strict=True)
+
+        # call test
+        loss, accuracy = test(
+            model, testloader
+        )  # <-------------------------- calls the `test` function, just what we did in the centralised setting
+        return loss, {"accuracy": accuracy}
+
+    return evaluate_fn
+
+
+# now we can define the strategy
+strategy = fl.server.strategy.FedAvg(
+    fraction_fit=0.1,  # let's sample 10% of the client each round to do local training
+    fraction_evaluate=0.1,  # after each round, let's sample 20% of the clients to asses how well the global model is doing
+    min_available_clients=50,  # total number of clients available in the experiment
+    evaluate_fn=get_evalulate_fn(testloader),
+)  # a callback to a function that the strategy can execute to evaluate the state of the global model on a centralised dataset
+```
+
+
+So far we have:
+* created the dataset partitions (one for each client)
+* defined the client class
+* decided on a strategy to use &#128512;&#128512;&#128512;
+
+Now we just need to launch the Flower FL experiment... not so fast! just one final function: let's create another callback that the Simulation Engine will use in order to span VirtualClients. As you can see this is really simple: construct a FlowerClient object, assigning each their own data partition.
+
+```ts
+def generate_client_fn(trainloaders, valloaders):
+    def client_fn(cid: str):
+        """Returns a FlowerClient containing the cid-th data partition"""
+
+        return FlowerClient(
+            trainloader=trainloaders[int(cid)], vallodaer=valloaders[int(cid)]
+        )
+
+    return client_fn
+
+
+client_fn_callback = generate_client_fn(trainloaders, valloaders)
+```
+
+Launch the FL experiment using Flower simulation &#128512;&#128512;&#128512;
+
+```ts
+history = fl.simulation.start_simulation(
+    client_fn=client_fn_callback,  # a callback to construct a client
+    num_clients=100,  # total number of clients in the experiment
+    config=fl.server.ServerConfig(num_rounds=10),  # let's run for 10 rounds
+    strategy=strategy,  # the strategy that will orchestrate the whole FL pipeline
+)
+```
+
+
+Doing 10 rounds should take less than 2 minutes on a CPU-only Colab instance <-- Flower Simulation is fast! 🚀
+Doing 20 rounds should take less than 15 minutes on a CPU-only Colab instance <-- Flower Simulation is fast! 🚀
+
+We can then use the returned <span style='color:  #000000; font-family: monospace; background-color: #40E0D0;'>History</span> object to either save the results to disk or do some visualisation (or both of course, or neither if you like chaos). Below you can see how you can plot the centralised accuracy obtained at the end of each round (including at the very beginning of the experiment) for the _global model_. This is want the function <span style='color:  #000000; font-family: monospace; background-color: #40E0D0;'>evaluate_fn()</span> that we passed to the strategy reports.
+
+```ts
+print(f"{history.metrics_centralized = }")
+
+global_accuracy_centralised = history.metrics_centralized["accuracy"]
+round = [data[0] for data in global_accuracy_centralised]
+acc = [100.0 * data[1] for data in global_accuracy_centralised]
+plt.plot(round, acc)
+plt.grid()
+plt.ylabel("Accuracy (%)")
+plt.xlabel("Round")
+plt.title("MNIST - IID - 100 clients with 10 clients per round")
+```

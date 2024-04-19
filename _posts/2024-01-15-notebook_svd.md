@@ -151,4 +151,5 @@ for p in [5, 10, 70, 100, 200]:
 plt.show()
 ```
 
+![image](https://github.com/PatternKPS/patternkps.github.io/assets/150363044/c0166955-0107-4791-b66a-bff41643a343)
 

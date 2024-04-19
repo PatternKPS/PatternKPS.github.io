@@ -3,9 +3,7 @@ layout:     post
 title:      "Singular Value Decomposition (SVD)"
 date:       2024-03-15 15:58:00
 author:     "Kristina"
-header-style: text
-hidden:       false
-catalog:      true
+header-mask: 0.3
 mathjax:      true
 tags:
     - svd
@@ -58,7 +56,15 @@ the **<font color='yellow'>spectral decomposition</font>** of $\mathbf{A}$.
 **<font color='green'>Theorem 1.</font>** For any matrix $\mathbf{A} \in \mathbb{R}^{m \times n}$, there exist two orthogonal matrices $\mathbf{U} \in \mathbb{R}^{m \times m}$, $\mathbf{V} \in \mathbb {R}^{n \times n}$, and a non-negative "diagonal" matrix $\mathbf{\Sigma} \in \mathbb{R}^{m \times n}$ (of the same size as $\mathbf{A}$). Such that the SVD of $m \times n$ matrix $\mathbf{A}$ is given by the formula:
 
 
+$$
+\mathbf{A}_{m\times n} = \mathbf{U}_{m \times m} \mathbf{\Sigma}_{m \times n} \mathbf{V}_{n \times n}^T
+$$
 
+
+where:
+- $\mathbf{U}$: $m \times m$ matrix of the orthonormal _eigenvectors_ of $\mathbf{AA}^T$.
+- $\mathbf{\Sigma}$: an $m \times n$ matrix whose $i^{th}$ diagonal entry equals the $i^{th}$ singular value $\sigma_i$ for $i=1, 2, \ldots, p$. All other entries of $\mathbf{\Sigma}$ are zero.
+- $\mathbf{V}^T$: transpose of a $n \times n$ matrix containing the orthonormal eigenvectors of $\mathbf{A}^T \mathbf{A}$.
 
 
 

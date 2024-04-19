@@ -66,21 +66,22 @@ where:
 - $\mathbf{V}^T$: transpose of a $n \times n$ matrix containing the orthonormal eigenvectors of $\mathbf{A}^T \mathbf{A}$.
 
 
-> $ \boxed{\color{yellow}\mathbf{U} \Longleftrightarrow  \mathbf{AA}^T = \mathbf{U} \mathbf{\Sigma} \mathbf{V}^T \cdot \mathbf{V} \mathbf{\Sigma}^T \mathbf{U}^T= \mathbf{U} (\mathbf{\Sigma} \mathbf{\Sigma}^T) \mathbf{U}^T} $ and 
-> $ \boxed{\color{yellow}\mathbf{V} \Longleftrightarrow  \mathbf{A}^T\mathbf{A} =  \mathbf{V} \mathbf{\Sigma}^T \mathbf{U}^T \cdot \mathbf{U} \mathbf{\Sigma} \mathbf{V}^T = \mathbf{V} (\mathbf{\Sigma}^T \mathbf{\Sigma} ) \mathbf{V}^T} $
+> $$ \boxed{\color{yellow}\mathbf{U} \Longleftrightarrow  \mathbf{AA}^T = \mathbf{U} \mathbf{\Sigma} \mathbf{V}^T \cdot \mathbf{V} \mathbf{\Sigma}^T \mathbf{U}^T= \mathbf{U} (\mathbf{\Sigma} \mathbf{\Sigma}^T) \mathbf{U}^T} $$ and 
+> $$ \boxed{\color{yellow}\mathbf{V} \Longleftrightarrow  \mathbf{A}^T\mathbf{A} =  \mathbf{V} \mathbf{\Sigma}^T \mathbf{U}^T \cdot \mathbf{U} \mathbf{\Sigma} \mathbf{V}^T = \mathbf{V} (\mathbf{\Sigma}^T \mathbf{\Sigma} ) \mathbf{V}^T} $$
 
 
 **<font color='green'>Proof:</font>** Given any matrix $\mathbf{A} \in \mathbb{R}^{m \times n}$, the SVD can be though of as solving a matrix equation for three unknown matrices (each with certain constraint):
 
-\begin{equation*}
-\color{yellow}\mathbf{A}=\underbrace{\mathbf{U}}_{\text{orthogonal}} \cdot \underbrace{\mathbf{\Sigma}}_{\text{diagonal}} \cdot \underbrace{\mathbf{V}^T}_{\text{orthogonal}}
-\tag{2}
-\end{equation*}
+$$
+\mathbf{A}=\underbrace{\mathbf{U}}_{\text{orthogonal}} \cdot \underbrace{\mathbf{\Sigma}}_{\text{diagonal}} \cdot \underbrace{\mathbf{V}^T}_{\text{orthogonal}}
+$$
 
 Suppose such solutions exist.
 
 - Knowing: 
-$$\mathbf{A}^T\mathbf{A}=\mathbf{V} (\mathbf{\Sigma}^T \mathbf{\Sigma} ) \mathbf{V}^T$$
+$$
+\mathbf{A}^T\mathbf{A}=\mathbf{V} (\mathbf{\Sigma}^T \mathbf{\Sigma} ) \mathbf{V}^T
+$$
 This tells us how to find $\mathbf{V}$ and $\mathbf{\Sigma}$ (which contain the eigenvectors and square roots of eigenvalues of $\mathbf{A}^T\mathbf{A}$, respectively).
 
 - After we have found both $\mathbf{V}$ and $\mathbf{\Sigma}$, rewrite the matrix equation as 

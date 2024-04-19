@@ -20,3 +20,32 @@ tags:
 
 We naturally first need to import torch and torchvision and loading **<font color='black'>the MNIST</font>** dataset
 
+```ts
+import flwr as fl
+import numpy as np
+import matplotlib.pyplot as plt
+import torch
+from torch.utils.data import DataLoader
+from transformers import AutoTokenizer, DataCollatorWithPadding
+
+DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+CHECKPOINT = "distilbert-base-uncased"
+from torchvision.transforms import ToTensor, Normalize, Compose
+import torch.nn as nn
+import torchvision
+import torch.nn.functional as F
+import torchvision.transforms as transforms
+from flwr.common import Metrics
+from torch.utils.data import DataLoader, random_split
+from torchvision.datasets import MNIST
+
+print("flwr", fl.__version__)
+print("numpy", np.__version__)
+print("torch", torch.__version__)
+print("torchvision", torchvision.__version__)
+
+DEVICE = torch.device("cpu")
+# DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+print(f"Training on {DEVICE}")
+```
+

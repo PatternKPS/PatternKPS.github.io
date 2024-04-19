@@ -57,9 +57,8 @@ the **<font color='yellow'>spectral decomposition</font>** of $\mathbf{A}$.
 
 
 $$
-A_{m\times n} = U_{m \times m} \Sigma_{m \times n} V_{n \times n}^T
+\mathbf{A}_{m\times n} = \mathbf{U}_{m \times m} \mathbf{\Sigma}_{m \times n} \mathbf{V}_{n \times n}^T
 $$
-
 
 where:
 - $\mathbf{U}$: $m \times m$ matrix of the orthonormal _eigenvectors_ of $\mathbf{AA}^T$.

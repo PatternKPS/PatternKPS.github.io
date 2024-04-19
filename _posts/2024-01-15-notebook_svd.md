@@ -57,7 +57,7 @@ the **<font color='yellow'>spectral decomposition</font>** of $\mathbf{A}$.
 
 
 $$
-\mathbf{A}_{m\times n} = \mathbf{U}_{m \times m} \mathbf{\Sigma}_{m \times n} \mathbf{V}_{n \times n}^T
+A_{m\times n} = U_{m \times m} \Sigma_{m \times n} V_{n \times n}^T
 $$
 
 

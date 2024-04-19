@@ -55,6 +55,40 @@ num_parameters = sum(value.numel() for value in model.state_dict().values())
 print(f"{num_parameters = }")
 ```
 
+Visualise 64 images from the dataset &#129300; &#129300; &#129300;
+
+```ts
+import random
+import numpy as np
+
+
+def visualise_n_random_examples(trainset_, n: int, verbose: bool = True):
+    # take n examples at random
+    idx = list(range(len(trainset_.data)))
+    random.shuffle(idx)
+    idx = idx[:n]
+    if verbose:
+        print(f"will display images with idx: {idx}")
+
+    # construct canvas
+    num_cols = 16
+    num_rows = int(np.ceil(len(idx) / num_cols))
+    fig, axs = plt.subplots(figsize=(64, num_rows * 4), nrows=num_rows, ncols=num_cols)
+
+    # display images on canvas
+    for c_i, i in enumerate(idx):
+        axs.flat[c_i].imshow(trainset_.data[i], cmap="gray")
+```
+
+```ts
+# it is likely that the plot this function will generate looks familiar to other plots you might have generated before
+# or you might have encountered in other tutorials. So far, we aren't doing anything new, Federated Learning will start soon!
+visualise_n_random_examples(trainset, n=64)
+```
+
+![image](https://github.com/PatternKPS/patternkps.github.io/assets/150363044/846f6833-5345-480c-b829-8f1ba7e5bb6f)
+
+
 The training loop
 
 ```ts
@@ -383,6 +417,8 @@ plt.ylabel("Accuracy (%)")
 plt.xlabel("Round")
 plt.title("MNIST - IID - 100 clients with 10 clients per round")
 ```
+
+![image](https://github.com/PatternKPS/patternkps.github.io/assets/150363044/4ef75f6c-677a-40d4-b565-d238fdbe3409)
 
 
 So.... we can modify the provided codes above to train 200, 400, 600, or even thousand billions of clients in federated environment using <font color='blue'>&#x1F33C;&#127800;F</font><font color='orange'>L</font><font color='magenta'>O</font><font color='yellow'>W</font><font color='green'>E</font><font color='black'>R &#x1F33C;&#127800;</font>. Anyway, I just tried until 200 clients using this data of MNIST.

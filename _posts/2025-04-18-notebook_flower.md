@@ -385,4 +385,4 @@ plt.title("MNIST - IID - 100 clients with 10 clients per round")
 ```
 
 
-So.... we can modify the provided codes above to train 200, 400, 600, or even thousand billions of clients in federated environment using <font color='red'>F</font><font color='orange'>L</font><font color='magenta'>O</font><font color='yellow'>W</font><font color='green'>E</font><font color='black'>R</font>. Anyway, I only tried until 200 clients using this data of MNIST.
+So.... we can modify the provided codes above to train 200, 400, 600, or even thousand billions of clients in federated environment using <font color='red'>F</font><font color='orange'>L</font><font color='magenta'>O</font><font color='yellow'>W</font><font color='green'>E</font><font color='black'>R</font>. Anyway, I just tried until 200 clients using this data of MNIST.

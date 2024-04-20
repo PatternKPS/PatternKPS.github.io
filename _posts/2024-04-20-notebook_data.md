@@ -75,7 +75,10 @@ Here we propose Federated averaging algorithm designed for federated learning of
 Intuitively, _local training_ (no FL participation) and _FedAvg_ (full FL participation) can be viewed as two ends of a **personalization spectrum** with _identical_ privacy costs. More concretely, each local update step takes the following form (mean-regularized multi-task learning (MR-MTL)):
 
 $$
-w_m^{t+1} = w_m^{(t)} - \eta \bigg( {\color{yellow}\underbrace{g_m^{(t)}}_{\text{private data gradient}}} + {\color{yellow} \overbrace{\lambda (w_m^{(t)} - \bar{w}^{(t)})}^{\text{mean-regularization}}} \bigg)
+\begin{gathered}
+w_m^{t+1} = w_m^{(t)} - \eta \bigg( \zeta \bigg)\\
+\zeta = {\underbrace{g_m^{(t)}}_{\text{private data gradient}}} + {\overbrace{\lambda (w_m^{(t)} - \bar{w}^{(t)})}^{\text{mean-regularization}}}
+\end{gathered}
 $$
 
 where the hyperparameter $\lambda$ serves as a smooth knob between local training and FedAvg: $\lambda=0$ recovers local training, and a larger $lambda$ forces the personalized models to be closer to each other (intuitively, _"Federate More"_).

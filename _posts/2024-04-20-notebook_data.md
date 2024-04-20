@@ -51,15 +51,11 @@ Three canonical applications of federated learning is provided below.
 
 The canonical federated learning problem involves learning a _single_, _global_ statistical model from data stored on tens to potentially millions of remote devices. Mathematically, FL can be formulated in the following way:
 
-$$
-\min\limits_w F(w)
-$$
+$\min\limits_w F(w)$
 
 where 
 
-$$
-J(w):= \sum_{m=1}^M p_m J_m (w)
-$$
+$J(w):= \sum_{m=1}^M p_m J_m (w)$
 
 where:
 - $M$ is the total number of devices or clients

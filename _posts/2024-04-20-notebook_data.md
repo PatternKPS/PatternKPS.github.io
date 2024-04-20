@@ -63,13 +63,6 @@ where:
 - $J_m(w)$ is defined as the empirical risk over local data, i.e., $J_m(w) = \frac{1}{n_m} \sum_{m=1}^M \sum_{i=1}^{n(m)} \sum_{k=1}^c \mu_{[m]ik} \|x_{[m]i} - a_{[m]k}\|^2$ 
 
 
-Here we propose Federated averaging algorithm designed for federated learning of collaborative unsupervised multi-view clustering. FL proceeds in multiple rounds of communication between the central server and the clients. Our federated learning employ these three stages:
-- Stage 1: A central server transmites a model back to all participating clients;
-- Stage 2: The clients train that model using their own local data and send back updatade models to the cetral server;
-- Stage 3: The central server aggregates the updates via averaging strategy and applies the update to the shared model.
-- cycle repeats.
-
-
 Intuitively, _local training_ (no FL participation) and _FedAvg_ (full FL participation) can be viewed as two ends of a **personalization spectrum** with _identical_ privacy costs. More concretely, each local update step takes the following form (mean-regularized multi-task learning (MR-MTL)):
 
 $$

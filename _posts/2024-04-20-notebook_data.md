@@ -5,8 +5,6 @@ title: "The Future Growth of Data "
 
 author: "Kristina"
 
-header-mask: 0.3
-
 mathjax: true
 
 tags:

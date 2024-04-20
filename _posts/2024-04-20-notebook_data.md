@@ -53,7 +53,6 @@ The canonical federated learning problem involves learning a _single_, _global_ 
 
 $$
 \min\limits_w F(w), ~ \text{where} ~ J(w):= \sum_{m=1}^M p_m J_m (w)
-\tag{1}
 $$
 
 where:
@@ -74,7 +73,6 @@ Intuitively, _local training_ (no FL participation) and _FedAvg_ (full FL partic
 
 $$
 w_m^{t+1} = w_m^{(t)} - \eta \bigg( {\color{yellow}\underbrace{g_m^{(t)}}_{\text{private data gradient}}} + {\color{yellow} \overbrace{\lambda (w_m^{(t)} - \bar{w}^{(t)})}^{\text{mean-regularization}}} \bigg)
-\tag{2}
 $$
 
 where the hyperparameter $\lambda$ serves as a smooth knob between local training and FedAvg: $\lambda=0$ recovers local training, and a larger $lambda$ forces the personalized models to be closer to each other (intuitively, _"Federate More"_).

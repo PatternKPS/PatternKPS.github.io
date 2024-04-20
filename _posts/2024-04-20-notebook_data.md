@@ -45,7 +45,7 @@ Three canonical applications of federated learning is provided below.
 3. _Learning over the Internet of Things (IoT)_. Modern Internet of Things networks, such as wearable devices, autonomous vehicles, or smart homes, may contain numerous sensors that allow them to collect, react, and adapt to incoming data in real-time. For example, a fleet of autonomous vehicles may require an up-to-date model of traffic, construction, or pedestrian behavior to safely operate; however, building aggregate models in these scenarios may be difficult due to the private nature of the data and the limited connectivity of each device. Federated learning methods can help train models that efficiently adapt to changes in these systems, while maintaining user privacy. 
 
 
-
+# 4. Mathematical formulation
 
 The canonical federated learning problem involves learning a _single_, _global_ statistical model from data stored on tens to potentially millions of remote devices. Mathematically, FL can be formulated in the following way:
 

@@ -79,7 +79,7 @@ w_m^{t+1} = w_m^{(t)} - \eta \bigg( \zeta \bigg)\\
 \end{gathered}
 $$
 
-where the hyperparameter $\lambda$ serves as a smooth knob between local training and FedAvg: $\lambda=0$ recovers local training, and a larger $lambda$ forces the personalized models to be closer to each other (intuitively, _"Federate More"_).
+where the hyperparameter $\lambda$ serves as a smooth knob between local training and FedAvg: $\lambda=0$ recovers local training, and a larger $\lambda$ forces the personalized models to be closer to each other (intuitively, _"Federate More"_).
 
 
 Tolerant to dropped devices or clients: An alternative approach involves actively selecting participating devices at each round.
